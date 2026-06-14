@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aday Personalizados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="#hero" class="logo">Aday<span> Personalizados</span></a>
+
+      <nav class="menu-principal">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Temas</a></li>
+          <li><a href="#">Agende aqui</a></li>
+          <li><a href="#">Contato</a></li>
+          <li class="menu-admin">
+            <a href="admin.html">Área Administrativa</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="secao-hero">
+        <div>
+          <img
+            src="../static/src/branca.jpg"
+            alt="Pegue e monte"
+            class="imagem-carrossel"
+          />
+        </div>
+
+        <div class="container-textos">
+          <p class="hero-texto">✨ Personalize do seu jeito ✨</p>
+          <h1 class="titulo-hero">
+            Escolha e <span class="gradient-text">monte</span> seu evento
+          </h1>
+
+          <p class="texto-sub">
+            Temos temas personalizados para cada ocasião: festas infantis,
+            aniversários, casamentos, chá de bebê, pool party, festas teens e
+            muito mais. Encontre o tema perfeito para sua comemoração!
+          </p>
+
+          <p class="texto-sub">
+            Entregamos além dos kit's 'Pegue e Monte': lembrancinhas e
+            decorações personalizadas, topo de bolo, toalha de mesa
+          </p>
+
+          <div>
+            <button class="botao botao-claro">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>Ver Temas
+            </button>
+            <button class="botao">
+              <i class="fa-solid fa-calendar-check"></i>Agendar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-galeria">
+        <div class="container-galeria">
+          <div class="section-header">
+            <span class="section-badge">📸 Nossa galeria</span>
+            <h2 class="section-title">
+              Festas <span class="highlight">Realizadas</span>
+            </h2>
+            <p class="texto-sub">
+              Confira algumas das festas que já realizamos com muito carinho e
+              dedicação.
+            </p>
+          </div>
+
+          <div class="lista-festas">
+            <div class="swiper-wrapper" id="gallery-wrapper">
+              <img src="../static/src/frozen.png" alt="" />
+              <img src="../static/src/frozen.png" alt="" />
+              <img src="../static/src/frozen.png" alt="" />
+              <img src="../static/src/frozen.png" alt="" />
+              <div class="swiper-button-prev swiper-btn-festas-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-button-next swiper-btn-festas-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-festas"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-temas">
+        <div class="container-temas">
+          <div class="section-header">
+            <span class="section-badge">🎨 Conheça nossos temas!</span>
+            <h2 class="section-title">
+              Temas <span class="highlight">Disponíveis</span>
+            </h2>
+            <p class="texto-sub">
+              Temos temas variados para atender todos os tipos de eventos.
+            </p>
+          </div>
+          <div class="carrossel-temas">
+            <i class="fa-solid fa-chevron-left"></i>
+            <div class="slides-tema">
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+            </div>
+            <div class="slides-tema2">
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+              <div class="componente"></div>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-agenda">
+        <div class="section-header">
+          <span class="section-badge">📅 Reserve sua data</span>
+          <h2 class="section-title">
+            Agende sua festa <span class="highlight">conosco!</span>
+          </h2>
+          <p class="texto-sub">
+            Siga os passos abaixo e finalize seu pré-agendamento em minutos!
+          </p>
+        </div>
+
+        <div class="stepper" id="stepper">
+          <div class="step active" data-step="1">
+            <div class="step-circle">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <span>Data &amp; Horário</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" data-step="2">
+            <div class="step-circle">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <span>Temas</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" data-step="3">
+            <div class="step-circle"><i class="fa-solid fa-user"></i></div>
+            <span>Seus Dados</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step" data-step="4">
+            <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+            <span>Resumo</span>
+          </div>
+        </div>
+
+        <div class="painel-agenda">
+          <div class="step-card">
+            <h3>
+              <i class="fa-solid fa-calendar-days"></i> Escolha a data e o
+              horário
+            </h3>
+
+            <div class="card-wrap">
+              <div class="calendario-agenda">
+                <label class="input-label">📅 Selecione a data</label>
+                <div id="calendar-container"></div>
+              </div>
+              <div class="horarios-wrap">
+                <label class="input-label">🕐 Selecione o horário</label>
+                <div class="horarios-grid" id="horarios-grid"></div>
+              </div>
+            </div>
+            <div class="step-nav">
+              <button class="btn btn-primary" id="btn-step1-next" disabled>
+                Próximo <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container footer-inner">
+        <div class="logo-footer">Aday<span>Personalizados</span></div>
+
+        <div style="display: flex; gap: 16px; margin: 10px 0">
+          <a
+            href="https://www.instagram.com/adaypersonalizados/"
+            target="_blank"
+            rel="noopener"
+            style="color: #ff6b9d; font-size: 1.8rem"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@dayaneagapito3"
+            target="_blank"
+            rel="noopener"
+            style="color: #ccc; font-size: 1.8rem"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+        <p class="footer-copy">
+          © 2025 Aday Personalizados – Todos os direitos reservados
+        </p>
+        <p class="footer-sub">
+          Feito com
+          <i class="fa-solid fa-heart" style="color: #ff6b9d"></i> para festas
+          inesquecíveis
+        </p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a
+      href="https://api.whatsapp.com/message/JVBRRAOJLUJRH1?autoload=1&app_absent=0&utm_source=ig"
+      target="_blank"
+      class="whatsapp-float"
+      id="whatsapp-float"
+      title="Fale conosco no WhatsApp"
+      aria-label="WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
